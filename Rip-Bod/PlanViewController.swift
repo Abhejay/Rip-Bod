@@ -14,8 +14,7 @@ class PlanViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        UITabBar.appearance().barTintColor = UIColor.black // your color
+        
     }
     
     

@@ -13,23 +13,114 @@
         <!--My Plans-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="PlanViewController" customModule="Rip_Bod" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ys2-9w-oJa">
+                                <rect key="frame" x="46" y="303" width="283" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Add A New Plan "/>
+                                <connections>
+                                    <segue destination="pE7-h2-WGH" kind="presentation" id="cml-Na-8oy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.3333333432674408" green="0.0" blue="0.074223438016277898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ys2-9w-oJa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bzx-fs-z9H"/>
+                            <constraint firstItem="Ys2-9w-oJa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OS3-dY-uKr"/>
+                            <constraint firstItem="Ys2-9w-oJa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="283" id="b1i-zn-Rcv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Plans" image="my plans" id="Ri5-65-CgO"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1072.8" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="grp-RK-NWA">
+            <objects>
+                <viewController id="pE7-h2-WGH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FBt-Iw-83O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbe-5H-4Hp">
+                                <rect key="frame" x="39" y="467" width="297" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gbe-5H-4Hp" secondAttribute="height" multiplier="297:181" id="XgZ-z4-c0Z"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4j-CT-VvH">
+                                <rect key="frame" x="39" y="49" width="297" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucz-p7-8bO">
+                                        <rect key="frame" x="0.0" y="148" width="297" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.057879650624408141" blue="0.088659755465877788" alpha="0.5403279049295775" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Personalized Workout Quiz">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBt-C3-3IT">
+                                        <rect key="frame" x="0.0" y="148" width="297" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.05787965062" blue="0.088659755470000004" alpha="0.54032790490000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Personalized Workout Quiz">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Workoutplan_Resized" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X2Q-Jj-46O">
+                                        <rect key="frame" x="0.0" y="0.0" width="306" height="184"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="W4j-CT-VvH" secondAttribute="height" multiplier="297:178" id="kgH-7n-SEW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8uZ-pX-O0w">
+                                <rect key="frame" x="39" y="261" width="297" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8uZ-pX-O0w" secondAttribute="height" multiplier="297:181" id="TTH-dR-bVV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.96406559243354117" blue="0.97158603865758408" alpha="0.29120818661971831" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mEK-Jd-XUd" firstAttribute="trailing" secondItem="8uZ-pX-O0w" secondAttribute="trailing" constant="39" id="Cjf-nF-hNY"/>
+                            <constraint firstItem="mEK-Jd-XUd" firstAttribute="bottom" secondItem="Gbe-5H-4Hp" secondAttribute="bottom" constant="20" id="DiI-YE-vrN"/>
+                            <constraint firstItem="8uZ-pX-O0w" firstAttribute="width" secondItem="W4j-CT-VvH" secondAttribute="width" id="Fap-wY-jVT"/>
+                            <constraint firstItem="W4j-CT-VvH" firstAttribute="top" secondItem="mEK-Jd-XUd" secondAttribute="top" constant="29" id="SmD-YW-gwt"/>
+                            <constraint firstItem="mEK-Jd-XUd" firstAttribute="trailing" secondItem="W4j-CT-VvH" secondAttribute="trailing" constant="39" id="adp-si-BkM"/>
+                            <constraint firstItem="mEK-Jd-XUd" firstAttribute="trailing" secondItem="Gbe-5H-4Hp" secondAttribute="trailing" constant="39" id="fDl-sO-cU3"/>
+                            <constraint firstItem="W4j-CT-VvH" firstAttribute="leading" secondItem="mEK-Jd-XUd" secondAttribute="leading" constant="39" id="jq8-e2-hGV"/>
+                            <constraint firstItem="8uZ-pX-O0w" firstAttribute="leading" secondItem="mEK-Jd-XUd" secondAttribute="leading" constant="39" id="kp1-uO-9a9"/>
+                            <constraint firstItem="Gbe-5H-4Hp" firstAttribute="height" secondItem="W4j-CT-VvH" secondAttribute="height" id="l8i-76-UIg"/>
+                            <constraint firstItem="Gbe-5H-4Hp" firstAttribute="width" secondItem="W4j-CT-VvH" secondAttribute="width" id="lj5-wy-3ba"/>
+                            <constraint firstItem="Gbe-5H-4Hp" firstAttribute="leading" secondItem="mEK-Jd-XUd" secondAttribute="leading" constant="39" id="lrx-pN-Lfu"/>
+                            <constraint firstItem="8uZ-pX-O0w" firstAttribute="top" secondItem="W4j-CT-VvH" secondAttribute="bottom" constant="32" id="szB-H4-xKS"/>
+                            <constraint firstItem="Gbe-5H-4Hp" firstAttribute="top" secondItem="8uZ-pX-O0w" secondAttribute="bottom" constant="26" id="yMt-gN-8U1"/>
+                            <constraint firstItem="8uZ-pX-O0w" firstAttribute="height" secondItem="W4j-CT-VvH" secondAttribute="height" id="zNj-Ye-2vR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mEK-Jd-XUd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0iR-Sl-VW0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="979.16041979010504"/>
         </scene>
         <!--Workouts-->
         <scene sceneID="giX-Ua-jK5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nBH-eG-JNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="2lL-Jd-ka8" customClass="WorkoutViewController" customModule="Rip_Bod" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Slc-7D-YKv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -40,6 +131,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Workouts" image="workout" id="Oef-BD-wDH"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBH-eG-JNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3345" y="134"/>
         </scene>
@@ -62,7 +154,6 @@
         <!--Quiz-->
         <scene sceneID="TwT-1g-SXd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x4B-02-zBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="KgE-28-QKS" customClass="QuizViewController" customModule="Rip_Bod" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sqi-V5-O8R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -72,13 +163,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Quiz" image="quiz" id="kJ3-4V-hC1"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x4B-02-zBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2580" y="133.5832083958021"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="lmH-eP-ipT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Fm-OE-XJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pyi-lw-B40" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZHi-bZ-VTC">
@@ -93,11 +184,13 @@
                         <segue destination="2lL-Jd-ka8" kind="relationship" relationship="viewControllers" id="2f6-Uo-bJf"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Fm-OE-XJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Workoutplan_Resized" width="297" height="181"/>
         <image name="discussion" width="30" height="30"/>
         <image name="my plans" width="30" height="30"/>
         <image name="quiz" width="30" height="30"/>
