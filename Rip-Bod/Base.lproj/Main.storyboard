@@ -49,45 +49,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbe-5H-4Hp">
-                                <rect key="frame" x="39" y="467" width="297" height="180"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gbe-5H-4Hp">
+                                <rect key="frame" x="39" y="469" width="297" height="181"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Gbe-5H-4Hp" secondAttribute="height" multiplier="297:181" id="XgZ-z4-c0Z"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4j-CT-VvH">
-                                <rect key="frame" x="39" y="49" width="297" height="180"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4j-CT-VvH">
+                                <rect key="frame" x="39" y="49" width="297" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucz-p7-8bO">
-                                        <rect key="frame" x="0.0" y="148" width="297" height="30"/>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Workoutplan_Resized" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X2Q-Jj-46O">
+                                        <rect key="frame" x="0.0" y="-2" width="306" height="184"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.057879650624408141" blue="0.088659755465877788" alpha="0.5403279049295775" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Personalized Workout Quiz">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBt-C3-3IT">
-                                        <rect key="frame" x="0.0" y="148" width="297" height="30"/>
+                                        <rect key="frame" x="5" y="151" width="297" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.05787965062" blue="0.088659755470000004" alpha="0.54032790490000004" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Personalized Workout Quiz">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Workoutplan_Resized" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X2Q-Jj-46O">
-                                        <rect key="frame" x="0.0" y="0.0" width="306" height="184"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="W4j-CT-VvH" secondAttribute="height" multiplier="297:178" id="kgH-7n-SEW"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8uZ-pX-O0w">
-                                <rect key="frame" x="39" y="261" width="297" height="180"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8uZ-pX-O0w">
+                                <rect key="frame" x="39" y="262" width="297" height="181"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8uZ-pX-O0w" secondAttribute="height" multiplier="297:181" id="TTH-dR-bVV"/>
@@ -95,22 +85,6 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96406559243354117" blue="0.97158603865758408" alpha="0.29120818661971831" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="mEK-Jd-XUd" firstAttribute="trailing" secondItem="8uZ-pX-O0w" secondAttribute="trailing" constant="39" id="Cjf-nF-hNY"/>
-                            <constraint firstItem="mEK-Jd-XUd" firstAttribute="bottom" secondItem="Gbe-5H-4Hp" secondAttribute="bottom" constant="20" id="DiI-YE-vrN"/>
-                            <constraint firstItem="8uZ-pX-O0w" firstAttribute="width" secondItem="W4j-CT-VvH" secondAttribute="width" id="Fap-wY-jVT"/>
-                            <constraint firstItem="W4j-CT-VvH" firstAttribute="top" secondItem="mEK-Jd-XUd" secondAttribute="top" constant="29" id="SmD-YW-gwt"/>
-                            <constraint firstItem="mEK-Jd-XUd" firstAttribute="trailing" secondItem="W4j-CT-VvH" secondAttribute="trailing" constant="39" id="adp-si-BkM"/>
-                            <constraint firstItem="mEK-Jd-XUd" firstAttribute="trailing" secondItem="Gbe-5H-4Hp" secondAttribute="trailing" constant="39" id="fDl-sO-cU3"/>
-                            <constraint firstItem="W4j-CT-VvH" firstAttribute="leading" secondItem="mEK-Jd-XUd" secondAttribute="leading" constant="39" id="jq8-e2-hGV"/>
-                            <constraint firstItem="8uZ-pX-O0w" firstAttribute="leading" secondItem="mEK-Jd-XUd" secondAttribute="leading" constant="39" id="kp1-uO-9a9"/>
-                            <constraint firstItem="Gbe-5H-4Hp" firstAttribute="height" secondItem="W4j-CT-VvH" secondAttribute="height" id="l8i-76-UIg"/>
-                            <constraint firstItem="Gbe-5H-4Hp" firstAttribute="width" secondItem="W4j-CT-VvH" secondAttribute="width" id="lj5-wy-3ba"/>
-                            <constraint firstItem="Gbe-5H-4Hp" firstAttribute="leading" secondItem="mEK-Jd-XUd" secondAttribute="leading" constant="39" id="lrx-pN-Lfu"/>
-                            <constraint firstItem="8uZ-pX-O0w" firstAttribute="top" secondItem="W4j-CT-VvH" secondAttribute="bottom" constant="32" id="szB-H4-xKS"/>
-                            <constraint firstItem="Gbe-5H-4Hp" firstAttribute="top" secondItem="8uZ-pX-O0w" secondAttribute="bottom" constant="26" id="yMt-gN-8U1"/>
-                            <constraint firstItem="8uZ-pX-O0w" firstAttribute="height" secondItem="W4j-CT-VvH" secondAttribute="height" id="zNj-Ye-2vR"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mEK-Jd-XUd"/>
                     </view>
                 </viewController>
