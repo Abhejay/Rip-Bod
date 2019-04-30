@@ -18,7 +18,6 @@
 		C7AD186D226F774D00E2679A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD186C226F774D00E2679A /* QuizViewController.swift */; };
 		C7AD186F226F775F00E2679A /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD186E226F775F00E2679A /* DiscussionViewController.swift */; };
 		C7AD1871226F777400E2679A /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD1870226F777400E2679A /* WorkoutViewController.swift */; };
-		F0E309562278AEC000A9DD3A /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E309552278AEC000A9DD3A /* PopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		C7AD186C226F774D00E2679A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		C7AD186E226F775F00E2679A /* DiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
 		C7AD1870226F777400E2679A /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
-		F0E309552278AEC000A9DD3A /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +112,6 @@
 				C7AD186C226F774D00E2679A /* QuizViewController.swift */,
 				C7AD1870226F777400E2679A /* WorkoutViewController.swift */,
 				C77D8DFA2267921100858710 /* Main.storyboard */,
-				F0E309552278AEC000A9DD3A /* PopVC.swift */,
 				C77D8DFD2267921100858710 /* Assets.xcassets */,
 				C77D8DFF2267921100858710 /* LaunchScreen.storyboard */,
 				C77D8E022267921100858710 /* Info.plist */,
@@ -273,7 +270,6 @@
 			files = (
 				C7AD1871226F777400E2679A /* WorkoutViewController.swift in Sources */,
 				C77D8DF92267921100858710 /* ViewController.swift in Sources */,
-				F0E309562278AEC000A9DD3A /* PopVC.swift in Sources */,
 				C77D8DF72267921100858710 /* AppDelegate.swift in Sources */,
 				C7AD186B226F773400E2679A /* PlanViewController.swift in Sources */,
 				C7AD186D226F774D00E2679A /* QuizViewController.swift in Sources */,
